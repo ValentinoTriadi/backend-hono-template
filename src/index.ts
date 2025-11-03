@@ -6,9 +6,6 @@ import { logger } from 'hono/logger';
 import { RequestIdVariables, requestId } from 'hono/request-id';
 
 import { env } from '@/configs';
-import { rabbitmqConfig } from '@/configs';
-import { rabbitMQService } from '@/lib/rabbitmq';
-import { alertEventConsumer } from '@/services/alert-event-consumer.service';
 
 import { apiRouter } from './controllers/api.controller';
 import { auth } from './lib';
